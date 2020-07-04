@@ -1,0 +1,248 @@
+*{
+	margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+	padding: 0;
+	box-sizing: border-box;
+    text-shadow: 5px;
+}
+body{
+	position: relative;
+	margin: 0;
+	background: url(two.jpg);
+	background-size: cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+	box-sizing: border-box;
+    text-shadow: 5px;    
+}
+#progressbar {
+	margin-top: 25px;
+    background-color: #f2f2e3;
+    border-radius: 30px;
+    padding: 0px;
+    margin-left: 480px;
+    width: 500px;
+}
+
+#progressbar div { 
+    background-color: #DC143C;
+    width: 25%;
+    height: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    animation:loadbar 2s;
+    -webkit-animation:loadbar 2s;
+}
+@keyframes loadbar {
+  0% {
+      width: 0%;
+  }
+   100% {
+      width: 25%;
+   }
+}
+@-webkit-keyframes loadbar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #f2f2e3;
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+}
+.fix{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f2e3;
+  border-bottom: black;
+  min-width: 250px;
+  height: 545px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.buttons {
+	margin-bottom: 35px;
+	float: right;
+    background-color: #DC143C;
+    border: 0;
+    color: white;
+    border-radius: 30px;
+    margin-top: 22px;
+	margin-right: 40px;
+	width: 100px;
+	height: 40px;
+}
+.ask{
+	margin-left: 50px;
+	margin-top: 40px;
+	height: 10px;
+	width: 80px;
+}
+
+@media screen and (max-width:359px){
+	div{
+		padding: 5px auto;
+		width: 100%;
+	}
+}
+#main{
+  margin-top: 60px;
+  margin-left: 480px;
+  background-color: white;
+  position: center;
+  color: black;
+  border:#999 2px solid white;
+  width: 480px;
+  height: 380px;
+  align-items: center;
+}
+.img{
+    width: 65px;
+    height: 65px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.h3{
+    display: inline-block;
+    font-size: 28px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: black;
+}
+.h2{
+    display: inline-block;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 28px;
+    margin-left: 790px;
+    color: black;
+}
+.h5{
+    display: inline-block;
+    font-size: 20px;
+    position: fixed;
+    margin-top: 28px;
+    margin-left: 700px;
+    color: black;
+}
+.taskbar{
+  margin-top: -15px;
+  margin-left: 4px;
+  background-color: white;
+  opacity: transparent;
+  position: center;
+  border-bottom: 1px solid black;
+  width: 1360px;
+  height:80px;
+  align-items: center;
+}
+.fa{
+    font-size: 75px;
+    margin-left: 760px;
+    margin-top: 30px;
+    position: fixed;
+    color: black;
+    display: inline-block;
+}
+label{
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 18px;
+    color: black;
+    font-size: 16px;
+}
+#events,
+input[type="date"],
+input[type="time"]{
+  color: black;
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 35%;
+  border-radius: 30px;
+  border-top: 6px solid #DC143C;
+  border-bottom: 6px solid #DC143C;
+  border-left: 1px solid #DC143C;
+  border-right: 1px solid #DC143C;
+  outline: none;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+}
+span{
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+}
+input[type="button"],
+.btn{
+	width: 25%;
+	border-radius: 30px;
+	position: relative;
+	padding: 15px;
+	background-color: #DC143C;
+	border: 0;
+    margin-left: 45%;
+    margin-top: 4%;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+}
+option{
+	appearance: none;
+	outline: none;
+	box-shadow: none;
+	background-color: #ffffff;
+	width: 200px;
+	padding: 8px;
+	font-size: 14px;
+	border-top: #adbce6;
+	border-left: #adbce6;
+	cursor: pointer;
+	border-radius: 30px;
+	border-bottom: 5px solid #72bcd4;
+}

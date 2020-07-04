@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WePlan</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <meta name="viewport" content="width=device-width,initial=1.0">
+</head>
+<body>
+	<div class="taskbar">
+		<ul>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn"><div class="fix"></div>
+				<div class="fix"></div>
+				<div class="fix"></div></button>
+  				<div id="myDropdown" class="dropdown-content">
+  					<a href="#home"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf965;</i> Home</a>
+   					<a href="#about"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf51e;</i> Transactions</a>
+  					<a href="#contact"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf584;</i> Your Past Events With Us</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf083;</i> Services</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf2bd;</i> Personal Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf044;</i> Event Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf502;</i> Close My Account</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf011;</i> Log Out</a>
+  				</div>
+			</div>
+			<img src="s2.jpg" class="img">
+			<h3 class="h3">WePlan</h3>
+			<a href="https://www.google.com/" class="h5">Blog</a>
+			<i style="font-size:30px;color: #DC143C" class="fa">&#xf3cd;</i>
+			<a href="#" class="h2">Download App</a>
+			<button class="buttons" onclick="openForm()"><strong>Sign-Up</strong></button>
+		</ul>
+	</div>
+	<div id="main">
+		<div class="form-popup" id="myForm">
+        	<form action="index.html" class="form-container" onsubmit="return validate()" name="myForms" method="post">
+                <label for="Name"><b>Name</b></label>
+                <input type="text" class="f"  title="Enter your name" id="uname" name="uname" required>
+				<label for="Mobile"><b>Mobile</b></label>
+				<input type="tel" class="f" id="mobile"  title="Enter a valid mobile number" name="mobile" pattern="[0-9]{10}" required="required">
+				<label for="Email-id"><b>Email-Id</b></label>
+				<input type="email" class="f" id="email"  title="Enter a valid email id" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2-5}$" required>
+				<label for="Password"><b>Password</b></label>
+				<input type="password" class="f" id="pass"  title="Password must contain atleast 6 or atmost 8 characters" name="pass" minlength="6" maxlength="8" required>
+                <button type="button" class="cancel" onclick="return validate()">Submit</button>
+       		</form>
+       	</div>
+       	<div class="mxe">
+       		<form action="page1.html" name="myForms" method="post">
+				<label id="email" for="Email-id"><b>Email-Id</b></label>
+				<span><input type="email" id="em" oninvalid="this.setCustomValidity('Please Enter Valid Email')" oninput="setCustomValidity('')" name="email" title="Enter a valid email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2-5}$" required></span>
+				<br><br><br>
+				<label id="pass" for="Password"><b>Password</b></label>
+				<span><input type="password" id="pa" oninvalid="this.setCustomValidity('Please Enter Valid Password')" oninput="setCustomValidity('')" name="pass" title="Password must contain atleast 6 or atmost 8 characters" minlength="6" maxlength="8" required></span>
+				<button class="btn">Visit</button>  
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

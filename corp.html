@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WePlan</title>
+	<link rel="stylesheet" type="text/css" href="page2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width,initial=1.0">
+</head>
+<body style="background-image: url(corp.jpg);">
+	<div class="taskbar">
+		<ul>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn"><div class="fix"></div>
+				<div class="fix"></div>
+				<div class="fix"></div></button>
+  				<div id="myDropdown" class="dropdown-content">
+  					<a href="#home"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf965;</i> Home</a>
+   					<a href="#about"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf51e;</i> Transactions</a>
+  					<a href="#contact"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf584;</i> Your Past Events With Us</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf083;</i> Services</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf2bd;</i> Personal Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf044;</i> Event Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf502;</i> Close My Account</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf011;</i> Log Out</a>
+  				</div>
+			</div>
+			<img src="s2.jpg" class="img">
+			<h3 class="h3">WePlan</h3>
+			<a href="https://www.google.com/" class="h5">Blog</a>
+			<i style="font-size:30px;color: #DC143C" class="fa">&#xf3cd;</i>
+			<a href="#" class="h2">Download App</a>
+			<button class="buttons" onclick="openForm()"><strong>Sign-Up</strong></button>
+		</ul>
+	</div>
+	<div id="progressbar">
+		<div>50%</div>
+	</div>
+	<div id="main">
+		<form name="jump" action="page2.html" onsubmit="return validate()">
+			<label for="citySel"><b>Select Event Type</b></label>
+			<select id="stateSel" size="1">
+    	    <option value="0">--Events--</option>
+			<option value="#">Trade Shows</option>
+			<option value="#">Press Conference</option>
+			<option value="#">Opening Ceremony</option>
+			<option value="#">Product Launch</option>
+			</select>
+			<br>
+			<label for="peo"><b>Maximum People <br> Expected</b></label>
+			<input type="text" id="peo" title="Specify number of people" name="Date">
+			<br>
+			<label for="cost"><b>Cost Range</b></label>
+			<input id="cost" type="text" title="Provide your comfortable budget" name="time">
+			<br>
+			<h3><center>&emsp;&emsp;<strong>Event Location Details</strong></center></h3>
+			<label for="state"><b>Select State</b></label>
+			<select id="state" size="1">
+    	    <option value="0" selected="selected">-- Select State --</option>
+    		<option value="#" > Tamil Nadu </option>
+    		<option value="#" > Andhra Pradesh </option>
+    		<option value="#" > Kerala </option>
+    		<option value="#" > Telangana </option>
+    		<option value="#" > Karnataka </option>
+    		</select>
+		    <br>
+		    <label for="citySel"><b>Enter City</b></label>
+    		<input type="text" id="city" title="Specify number of people" name="Date">
+    		<br>
+    		<label for="citySel"><b>Location</b></label>
+    		<label class="container">&emsp;&emsp;&nbsp;House
+			  <input type="radio" checked="checked" name="radio">
+			  <span class="checkm"></span>
+			</label>
+			<label class="container">&emsp;&emsp;&nbsp;Venue
+			  <input type="radio" name="radio">
+			  <span class="checkm"></span>
+			</label>
+    		<br><br>
+    		<label for="add"><b>Address / <br> Preferred Location</b></label>&emsp;
+			<center><textarea name="Text1" id="add" title="Home-Provide your house address / Venue- Provide your comfortable location"  cols="50" rows="5"></textarea></center>
+			<br>
+			<h3><center>&emsp;&emsp;<strong>Food Requirements</strong></center></h3>
+			<label class="container">&emsp;&emsp;&nbsp;Vegetarian
+			  <input type="checkbox" id="food" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">&emsp;&emsp;&nbsp;Non-Vegetarian
+			  <input type="checkbox" id="fod" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+    		<br><br>
+    		<h3><center>&emsp;&emsp;<strong>Cusine</strong></center></h3>
+			<label class="contain">&emsp;&emsp;&nbsp;   Burma 
+			  <input type="checkbox" id="1"  name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;South Indian
+			  <input type="checkbox" id="2" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;   Italian
+			  <input type="checkbox" id="3" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;North Indian
+			  <input type="checkbox" id="4" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;   Biritsh
+			  <input type="checkbox" id="5" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;Japanese
+			  <input type="checkbox" id="6" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;  French
+			  <input type="checkbox" id="7" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;American
+			  <input type="checkbox" id="8" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+    		<br><br>
+			<label class="contain">&emsp;&emsp;&nbsp;Chinese
+			  <input type="checkbox" id="9" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;Thai
+			  <input type="checkbox" id="10"  name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;Spanish
+			  <input type="checkbox" id="11" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="contain">&emsp;&emsp;&nbsp;Carribean
+			  <input type="checkbox" id="12" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<br><br>
+			<div class="w3-show-inline-block">
+			<div class="w3-bar">
+		    	<button class="w3-btn w3-pink" onclick="location.href='page1.html';">Previous</button>
+		    	<button class="w3-btn w3-pink" onclick="return validate()">Next</button>
+		  	</div>
+		  	</div>	
+		</form>	
+	</div>  
+	<script type="text/javascript" src="fix.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

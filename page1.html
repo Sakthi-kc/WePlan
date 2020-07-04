@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WePlan</title>
+	<link rel="stylesheet" type="text/css" href="page1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width,initial=1.0">
+	<meta charset="utf-8">
+</head>
+<body style="Times New Roman", Times, serif;>
+	<div class="taskbar">
+		<ul>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn"><div class="fix"></div>
+				<div class="fix"></div>
+				<div class="fix"></div></button>
+  				<div id="myDropdown" class="dropdown-content">
+  					<a href="#home"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf965;</i> Home</a>
+   					<a href="#about"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf51e;</i> Transactions</a>
+  					<a href="#contact"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf584;</i> Your Past Events With Us</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf083;</i> Services</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf2bd;</i> Personal Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf044;</i> Event Details</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf502;</i> Close My Account</a>
+  					<a href="#"><i style='font-size:24px;color:#DC143C' class='fas' >&#xf011;</i> Log Out</a>
+  				</div>
+			</div>
+			<img src="s2.jpg" class="img">
+			<h3 class="h3">WePlan</h3>
+			<a href="https://www.google.com/" class="h5">Blog</a>
+			<i style="font-size:30px;color: #DC143C" class="fa">&#xf3cd;</i>
+			<a href="#" class="h2">Download App</a>
+			<button class="buttons" onclick="openForm()"><strong>Sign-Up</strong></button>
+		</ul>
+	</div>
+	<div id="progressbar">
+		<div>25%</div>
+	</div>
+	<div id="main">
+		<form name="jump"> 
+			<label><b>Select Event</b></label>
+				<span><select name="menu" id="events" required>
+					<option value="#">--Events--</option>
+					<option value="pers.html">Personal Events</option>
+					<option value="prof.html">Professional Events</option>
+					<option value="ins.html">Institutional Events</option>
+					<option value="soc.html">Social Events</option>
+					<option value="corp.html">Corporate Events</option>
+					<option value="live.html">Live Music Shows</option>
+					<option value="ent.html">Entertainment Shows</option>
+					<option value="other.html">Others</option>
+				</select></span>
+			<br><br>
+			<label><b>Select Date</b></label>
+			<span><input id="datepicker" onchange="checkDate()" required class="datepicker-input" type="date" required/></span>
+			<br><br>
+			<label><b>Select Time</b></label>
+			<span><input type="time" id="myTime" name="usr_time" required/></span>
+			<input type="button" value="Explore" onClick ="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" onchange="gotoPage(this)">
+		</form>	
+	</div>  
+	<script type="text/javascript" src="page1.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
